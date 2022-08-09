@@ -1,0 +1,94 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+:root {
+  --default: #115ff4;
+  --defaultHover: #0051e9;
+  --category: #060ce9;
+  --answer: #28a200;
+  --question: #8d2ab5;
+  --questionHover: #74119c;
+}
+
+.answer,
+.answer:hover {
+  background-color: var(--answer);
+}
+
+.question {
+  background-color: var(--question);
+}
+
+.question:hover {
+  background-color: var(--questionHover);
+}
+
+.spinner-border {
+  height: 300px;
+  width: 300px;
+  color: cyan;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to bottom right, #00d9ff, #0084ff);
+}
+
+table {
+  text-align: center;
+  font-size: 18px;
+  background-color: var(--default);
+  color: cyan;
+  border-collapse: collapse;
+  margin: 20px 100px;
+}
+
+th,
+td {
+  border: solid 1px cyan;
+  width: 180px;
+}
+
+th {
+  height: 80px;
+  text-transform: uppercase;
+  background-color: var(--category);
+}
+
+td {
+  height: 140px;
+  transition: ease 500ms;
+}
+
+td:hover {
+  cursor: pointer;
+  background-color: var(--defaultHover);
+}
+
+button {
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  transition: ease 500ms;
+}
+
+button:hover {
+  transform: scale(1.02);
+  background-color: #dbdbdb;
+}
